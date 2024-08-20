@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2024-08-20T13:37:00.4220976Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="LIT_001" Datatype="&quot;INSTRUMENTO&quot;" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Nível Tanque</MultiLanguageText></Comment><Sections><Section Name="Input"><Member Name="VALOR MANUAL" Datatype="Real" /><Member Name="EA" Datatype="Int" /><Member Name="EA_IE" Datatype="Real" /><Member Name="EA_FE" Datatype="Real" /><Member Name="S_IE" Datatype="Real" /><Member Name="S_FE" Datatype="Real" /><Member Name="S2_IE" Datatype="Real" /><Member Name="S2_FE" Datatype="Real" /><Member Name="SPLL" Datatype="Real" /><Member Name="SPL" Datatype="Real" /><Member Name="SPH" Datatype="Real" /><Member Name="SPHH" Datatype="Real" /><Member Name="TE_LL" Datatype="Time" /><Member Name="TE_L" Datatype="Time" /><Member Name="TE_H" Datatype="Time" /><Member Name="TE_HH" Datatype="Time" /><Member Name="FRH" Datatype="Int" /><Member Name="FRL" Datatype="Int" /><Member Name="LIM" Datatype="Bool" /><Member Name="MANUAL" Datatype="Bool" /><Member Name="COND" Datatype="Bool" /><Member Name="SPR_YLL" Datatype="Bool" /><Member Name="SPR_YL" Datatype="Bool" /><Member Name="SPR_YH" Datatype="Bool" /><Member Name="SPR_YHH" Datatype="Bool" /></Section><Section Name="Output"><Member Name="VNP" Datatype="Real" /><Member Name="YLL" Datatype="Bool" /><Member Name="YL" Datatype="Bool" /><Member Name="YH" Datatype="Bool" /><Member Name="YHH" Datatype="Bool" /><Member Name="YF" Datatype="Bool" /><Member Name="VNS" Datatype="Real" /><Member Name="LL" Datatype="Bool" /><Member Name="L" Datatype="Bool" /><Member Name="H" Datatype="Bool" /><Member Name="HH" Datatype="Bool" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="TLL" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TL" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TH" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="THH" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="FALHA" Datatype="Bool" /></Section></Sections></Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>ANALOGICOS</Name>
+      <Number>101</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>pt-BR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="SETPOINTS" />
+        <Component Name="LIT_001-SPM" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="LIT_001" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="23">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>0.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="24">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>27670.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>0.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>100.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>0.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>5.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="SETPOINTS" />
+        <Component Name="LIT_001-SPLL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="SETPOINTS" />
+        <Component Name="LIT_001-SPL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="SETPOINTS" />
+        <Component Name="LIT_001-SPH" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="SETPOINTS" />
+        <Component Name="LIT_001-SPHH" />
+      </Symbol>
+    </Access>
+    <Access Scope="TypedConstant" UId="33">
+      <Constant>
+        <ConstantValue>T#5s</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="TypedConstant" UId="34">
+      <Constant>
+        <ConstantValue>T#5s</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="TypedConstant" UId="35">
+      <Constant>
+        <ConstantValue>T#5s</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="TypedConstant" UId="36">
+      <Constant>
+        <ConstantValue>T#5s</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="37">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>28000</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="38">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="39">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>TRUE</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="COMANDOS" />
+        <Component Name="LIT_001-HSM" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="41">
+      <Symbol>
+        <Component Name="AlwaysTRUE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="COMANDOS" />
+        <Component Name="LIT_001-HSLL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="43">
+      <Symbol>
+        <Component Name="COMANDOS" />
+        <Component Name="LIT_001-HSL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="44">
+      <Symbol>
+        <Component Name="COMANDOS" />
+        <Component Name="LIT_001-HSH" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="45">
+      <Symbol>
+        <Component Name="COMANDOS" />
+        <Component Name="LIT_001-HSHH" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="46">
+      <Symbol>
+        <Component Name="VARIAVEIS" />
+        <Component Name="LIT_001-P" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="47">
+      <Symbol>
+        <Component Name="ALARMES" />
+        <Component Name="LIT_001-YLL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="48">
+      <Symbol>
+        <Component Name="ALARMES" />
+        <Component Name="LIT_001-YL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="49">
+      <Symbol>
+        <Component Name="ALARMES" />
+        <Component Name="LIT_001-YH" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="50">
+      <Symbol>
+        <Component Name="ALARMES" />
+        <Component Name="LIT_001-YHH" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="51">
+      <Symbol>
+        <Component Name="Digitais" />
+        <Component Name="LIT_001-YFS" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="52">
+      <Symbol>
+        <Component Name="VARIAVEIS" />
+        <Component Name="LIT_001" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="53">
+      <Symbol>
+        <Component Name="Digitais" />
+        <Component Name="LIT_001-YLL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="54">
+      <Symbol>
+        <Component Name="Digitais" />
+        <Component Name="LIT_001-YL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="55">
+      <Symbol>
+        <Component Name="Digitais" />
+        <Component Name="LIT_001-YH" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="56">
+      <Symbol>
+        <Component Name="Digitais" />
+        <Component Name="LIT_001-YHH" />
+      </Symbol>
+    </Access>
+    <Call UId="57">
+      <CallInfo Name="INSTRUMENTO" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="58">
+          <Component Name="LIT_001" />
+        </Instance>
+        <Parameter Name="VALOR MANUAL" Section="Input" Type="Real" />
+        <Parameter Name="EA" Section="Input" Type="Int" />
+        <Parameter Name="EA_IE" Section="Input" Type="Real" />
+        <Parameter Name="EA_FE" Section="Input" Type="Real" />
+        <Parameter Name="S_IE" Section="Input" Type="Real" />
+        <Parameter Name="S_FE" Section="Input" Type="Real" />
+        <Parameter Name="S2_IE" Section="Input" Type="Real" />
+        <Parameter Name="S2_FE" Section="Input" Type="Real" />
+        <Parameter Name="SPLL" Section="Input" Type="Real" />
+        <Parameter Name="SPL" Section="Input" Type="Real" />
+        <Parameter Name="SPH" Section="Input" Type="Real" />
+        <Parameter Name="SPHH" Section="Input" Type="Real" />
+        <Parameter Name="TE_LL" Section="Input" Type="Time" />
+        <Parameter Name="TE_L" Section="Input" Type="Time" />
+        <Parameter Name="TE_H" Section="Input" Type="Time" />
+        <Parameter Name="TE_HH" Section="Input" Type="Time" />
+        <Parameter Name="FRH" Section="Input" Type="Int" />
+        <Parameter Name="FRL" Section="Input" Type="Int" />
+        <Parameter Name="LIM" Section="Input" Type="Bool" />
+        <Parameter Name="MANUAL" Section="Input" Type="Bool" />
+        <Parameter Name="COND" Section="Input" Type="Bool" />
+        <Parameter Name="SPR_YLL" Section="Input" Type="Bool" />
+        <Parameter Name="SPR_YL" Section="Input" Type="Bool" />
+        <Parameter Name="SPR_YH" Section="Input" Type="Bool" />
+        <Parameter Name="SPR_YHH" Section="Input" Type="Bool" />
+        <Parameter Name="VNP" Section="Output" Type="Real" />
+        <Parameter Name="YLL" Section="Output" Type="Bool" />
+        <Parameter Name="YL" Section="Output" Type="Bool" />
+        <Parameter Name="YH" Section="Output" Type="Bool" />
+        <Parameter Name="YHH" Section="Output" Type="Bool" />
+        <Parameter Name="YF" Section="Output" Type="Bool" />
+        <Parameter Name="VNS" Section="Output" Type="Real" />
+        <Parameter Name="LL" Section="Output" Type="Bool" />
+        <Parameter Name="L" Section="Output" Type="Bool" />
+        <Parameter Name="H" Section="Output" Type="Bool" />
+        <Parameter Name="HH" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="59">
+      <Powerrail />
+      <NameCon UId="57" Name="en" />
+    </Wire>
+    <Wire UId="60">
+      <IdentCon UId="21" />
+      <NameCon UId="57" Name="VALOR MANUAL" />
+    </Wire>
+    <Wire UId="61">
+      <IdentCon UId="22" />
+      <NameCon UId="57" Name="EA" />
+    </Wire>
+    <Wire UId="62">
+      <IdentCon UId="23" />
+      <NameCon UId="57" Name="EA_IE" />
+    </Wire>
+    <Wire UId="63">
+      <IdentCon UId="24" />
+      <NameCon UId="57" Name="EA_FE" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="25" />
+      <NameCon UId="57" Name="S_IE" />
+    </Wire>
+    <Wire UId="65">
+      <IdentCon UId="26" />
+      <NameCon UId="57" Name="S_FE" />
+    </Wire>
+    <Wire UId="66">
+      <IdentCon UId="27" />
+      <NameCon UId="57" Name="S2_IE" />
+    </Wire>
+    <Wire UId="67">
+      <IdentCon UId="28" />
+      <NameCon UId="57" Name="S2_FE" />
+    </Wire>
+    <Wire UId="68">
+      <IdentCon UId="29" />
+      <NameCon UId="57" Name="SPLL" />
+    </Wire>
+    <Wire UId="69">
+      <IdentCon UId="30" />
+      <NameCon UId="57" Name="SPL" />
+    </Wire>
+    <Wire UId="70">
+      <IdentCon UId="31" />
+      <NameCon UId="57" Name="SPH" />
+    </Wire>
+    <Wire UId="71">
+      <IdentCon UId="32" />
+      <NameCon UId="57" Name="SPHH" />
+    </Wire>
+    <Wire UId="72">
+      <IdentCon UId="33" />
+      <NameCon UId="57" Name="TE_LL" />
+    </Wire>
+    <Wire UId="73">
+      <IdentCon UId="34" />
+      <NameCon UId="57" Name="TE_L" />
+    </Wire>
+    <Wire UId="74">
+      <IdentCon UId="35" />
+      <NameCon UId="57" Name="TE_H" />
+    </Wire>
+    <Wire UId="75">
+      <IdentCon UId="36" />
+      <NameCon UId="57" Name="TE_HH" />
+    </Wire>
+    <Wire UId="76">
+      <IdentCon UId="37" />
+      <NameCon UId="57" Name="FRH" />
+    </Wire>
+    <Wire UId="77">
+      <IdentCon UId="38" />
+      <NameCon UId="57" Name="FRL" />
+    </Wire>
+    <Wire UId="78">
+      <IdentCon UId="39" />
+      <NameCon UId="57" Name="LIM" />
+    </Wire>
+    <Wire UId="79">
+      <IdentCon UId="40" />
+      <NameCon UId="57" Name="MANUAL" />
+    </Wire>
+    <Wire UId="80">
+      <IdentCon UId="41" />
+      <NameCon UId="57" Name="COND" />
+    </Wire>
+    <Wire UId="81">
+      <IdentCon UId="42" />
+      <NameCon UId="57" Name="SPR_YLL" />
+    </Wire>
+    <Wire UId="82">
+      <IdentCon UId="43" />
+      <NameCon UId="57" Name="SPR_YL" />
+    </Wire>
+    <Wire UId="83">
+      <IdentCon UId="44" />
+      <NameCon UId="57" Name="SPR_YH" />
+    </Wire>
+    <Wire UId="84">
+      <IdentCon UId="45" />
+      <NameCon UId="57" Name="SPR_YHH" />
+    </Wire>
+    <Wire UId="85">
+      <NameCon UId="57" Name="VNP" />
+      <IdentCon UId="46" />
+    </Wire>
+    <Wire UId="86">
+      <NameCon UId="57" Name="YLL" />
+      <IdentCon UId="47" />
+    </Wire>
+    <Wire UId="87">
+      <NameCon UId="57" Name="YL" />
+      <IdentCon UId="48" />
+    </Wire>
+    <Wire UId="88">
+      <NameCon UId="57" Name="YH" />
+      <IdentCon UId="49" />
+    </Wire>
+    <Wire UId="89">
+      <NameCon UId="57" Name="YHH" />
+      <IdentCon UId="50" />
+    </Wire>
+    <Wire UId="90">
+      <NameCon UId="57" Name="YF" />
+      <IdentCon UId="51" />
+    </Wire>
+    <Wire UId="91">
+      <NameCon UId="57" Name="VNS" />
+      <IdentCon UId="52" />
+    </Wire>
+    <Wire UId="92">
+      <NameCon UId="57" Name="LL" />
+      <IdentCon UId="53" />
+    </Wire>
+    <Wire UId="93">
+      <NameCon UId="57" Name="L" />
+      <IdentCon UId="54" />
+    </Wire>
+    <Wire UId="94">
+      <NameCon UId="57" Name="H" />
+      <IdentCon UId="55" />
+    </Wire>
+    <Wire UId="95">
+      <NameCon UId="57" Name="HH" />
+      <IdentCon UId="56" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>pt-BR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Nível Tanque (Sensor tipo radar)</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>pt-BR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>pt-BR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

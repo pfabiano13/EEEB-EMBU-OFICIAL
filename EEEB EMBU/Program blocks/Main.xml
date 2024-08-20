@@ -2,7 +2,7 @@
 <Document>
   <Engineering version="V17" />
   <DocumentInfo>
-    <Created>2024-08-20T13:26:08.9627556Z</Created>
+    <Created>2024-08-20T13:54:07.0155259Z</Created>
     <ExportSetting>WithDefaults</ExportSetting>
     <InstalledProducts>
       <Product>
@@ -559,9 +559,9 @@
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
   <Parts>
     <Call UId="21">
-      <CallInfo Name="LOOP" BlockType="FB">
+      <CallInfo Name="INTPRO" BlockType="FB">
         <Instance Scope="GlobalVariable" UId="22">
-          <Component Name="LOOP_DB" />
+          <Component Name="INTPRO_DB" />
         </Instance>
       </CallInfo>
     </Call>
@@ -615,15 +615,11 @@
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
   <Parts>
     <Call UId="21">
-      <CallInfo Name="INTPRO" BlockType="FB">
-        <Instance Scope="GlobalVariable" UId="22">
-          <Component Name="INTPRO_DB" />
-        </Instance>
-      </CallInfo>
+      <CallInfo Name="AlARME" BlockType="FC" />
     </Call>
   </Parts>
   <Wires>
-    <Wire UId="23">
+    <Wire UId="22">
       <Powerrail />
       <NameCon UId="21" Name="en" />
     </Wire>
@@ -668,19 +664,7 @@
       </SW.Blocks.CompileUnit>
       <SW.Blocks.CompileUnit ID="43" CompositionName="CompileUnits">
         <AttributeList>
-          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
-  <Parts>
-    <Call UId="21">
-      <CallInfo Name="AlARME" BlockType="FC" />
-    </Call>
-  </Parts>
-  <Wires>
-    <Wire UId="22">
-      <Powerrail />
-      <NameCon UId="21" Name="en" />
-    </Wire>
-  </Wires>
-</FlgNet></NetworkSource>
+          <NetworkSource />
           <ProgrammingLanguage>LAD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
@@ -718,55 +702,15 @@
           </MultilingualText>
         </ObjectList>
       </SW.Blocks.CompileUnit>
-      <SW.Blocks.CompileUnit ID="4A" CompositionName="CompileUnits">
-        <AttributeList>
-          <NetworkSource />
-          <ProgrammingLanguage>LAD</ProgrammingLanguage>
-        </AttributeList>
+      <MultilingualText ID="4A" CompositionName="Title">
         <ObjectList>
-          <MultilingualText ID="4B" CompositionName="Comment">
-            <ObjectList>
-              <MultilingualTextItem ID="4C" CompositionName="Items">
-                <AttributeList>
-                  <Culture>en-US</Culture>
-                  <Text />
-                </AttributeList>
-              </MultilingualTextItem>
-              <MultilingualTextItem ID="4D" CompositionName="Items">
-                <AttributeList>
-                  <Culture>pt-BR</Culture>
-                  <Text />
-                </AttributeList>
-              </MultilingualTextItem>
-            </ObjectList>
-          </MultilingualText>
-          <MultilingualText ID="4E" CompositionName="Title">
-            <ObjectList>
-              <MultilingualTextItem ID="4F" CompositionName="Items">
-                <AttributeList>
-                  <Culture>en-US</Culture>
-                  <Text />
-                </AttributeList>
-              </MultilingualTextItem>
-              <MultilingualTextItem ID="50" CompositionName="Items">
-                <AttributeList>
-                  <Culture>pt-BR</Culture>
-                  <Text />
-                </AttributeList>
-              </MultilingualTextItem>
-            </ObjectList>
-          </MultilingualText>
-        </ObjectList>
-      </SW.Blocks.CompileUnit>
-      <MultilingualText ID="51" CompositionName="Title">
-        <ObjectList>
-          <MultilingualTextItem ID="52" CompositionName="Items">
+          <MultilingualTextItem ID="4B" CompositionName="Items">
             <AttributeList>
               <Culture>en-US</Culture>
               <Text>"Main Program Sweep (Cycle)"</Text>
             </AttributeList>
           </MultilingualTextItem>
-          <MultilingualTextItem ID="53" CompositionName="Items">
+          <MultilingualTextItem ID="4C" CompositionName="Items">
             <AttributeList>
               <Culture>pt-BR</Culture>
               <Text>"Main Program Sweep (Cycle)"</Text>

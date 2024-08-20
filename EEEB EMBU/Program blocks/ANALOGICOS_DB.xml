@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2024-08-20T13:26:09.6600491Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>V17 Update 4</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <DBAccessibleFromOPCUA>true</DBAccessibleFromOPCUA>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <InstanceOfName>ANALOGICOS</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="LIT_001" Datatype="&quot;INSTRUMENTO&quot;" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Nível Tanque</MultiLanguageText></Comment><Sections><Section Name="Input"><Member Name="VALOR MANUAL" Datatype="Real" /><Member Name="EA" Datatype="Int" /><Member Name="EA_IE" Datatype="Real" /><Member Name="EA_FE" Datatype="Real" /><Member Name="S_IE" Datatype="Real" /><Member Name="S_FE" Datatype="Real" /><Member Name="S2_IE" Datatype="Real" /><Member Name="S2_FE" Datatype="Real" /><Member Name="SPLL" Datatype="Real" /><Member Name="SPL" Datatype="Real" /><Member Name="SPH" Datatype="Real" /><Member Name="SPHH" Datatype="Real" /><Member Name="TE_LL" Datatype="Time" /><Member Name="TE_L" Datatype="Time" /><Member Name="TE_H" Datatype="Time" /><Member Name="TE_HH" Datatype="Time" /><Member Name="FRH" Datatype="Int" /><Member Name="FRL" Datatype="Int" /><Member Name="LIM" Datatype="Bool" /><Member Name="MANUAL" Datatype="Bool" /><Member Name="COND" Datatype="Bool" /><Member Name="SPR_YLL" Datatype="Bool" /><Member Name="SPR_YL" Datatype="Bool" /><Member Name="SPR_YH" Datatype="Bool" /><Member Name="SPR_YHH" Datatype="Bool" /></Section><Section Name="Output"><Member Name="VNP" Datatype="Real" /><Member Name="YLL" Datatype="Bool" /><Member Name="YL" Datatype="Bool" /><Member Name="YH" Datatype="Bool" /><Member Name="YHH" Datatype="Bool" /><Member Name="YF" Datatype="Bool" /><Member Name="VNS" Datatype="Real" /><Member Name="LL" Datatype="Bool" /><Member Name="L" Datatype="Bool" /><Member Name="H" Datatype="Bool" /><Member Name="HH" Datatype="Bool" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="TLL" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TL" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="TH" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="THH" Datatype="TON_TIME" Version="1.0"><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member><Member Name="FALHA" Datatype="Bool" /></Section></Sections></Member>
+  </Section>
+</Sections></Interface>
+      <Name>ANALOGICOS_DB</Name>
+      <Number>101</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>pt-BR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>pt-BR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>
